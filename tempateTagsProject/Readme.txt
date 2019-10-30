@@ -1,0 +1,1 @@
+this mini project demostrate the use of templatre tags/variables
