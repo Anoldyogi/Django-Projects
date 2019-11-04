@@ -6,3 +6,5 @@ class employee(models.Model):
 	eno=models.IntegerField()
 	esal=models.FloatField()
 	eaddress=models.CharField(max_length=40)
+	def __str__(self):
+		return self.ename,self.eno,self.esal,self.eaddress
