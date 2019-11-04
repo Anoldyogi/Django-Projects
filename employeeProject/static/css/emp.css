@@ -1,0 +1,23 @@
+body{
+	color: red;
+	margin: auto;
+
+}
+
+td,table{
+margin: auto;
+border:2px solid red;
+}
+
+h1{
+	color:Blue;
+	text-align: center;
+}
+
+thead{
+	background: yellow;
+}
+
+.container .jumbotron{
+	margin-top: 200px;
+}
