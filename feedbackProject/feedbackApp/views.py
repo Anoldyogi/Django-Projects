@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from . import forms
 # Create your views here.
+def thankyou(request):
+	return render(request,'testapp/thankyou.html')
+
 def feedbackView(request):
 	form=forms.feedbackForm()
 	if request.method=="POST":
@@ -10,5 +13,6 @@ def feedbackView(request):
 			print("Name is ", form.cleaned_data['name'])
 			print("Email is ", form.cleaned_data['email'])
 			print("Feedback is ", form.cleaned_data['feedback'])
+			thankyou(request)
 
 	return render (request,'testapp/feedback.html',{'form':form})
