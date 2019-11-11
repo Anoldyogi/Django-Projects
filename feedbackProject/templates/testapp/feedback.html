@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load staticfiles%}
+{% load staticfiles %}
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
@@ -15,8 +15,8 @@
 		<form  method="post">
 
 		{{form.as_p}}
-		{% csrf_token %}
-<input type="submit" class="btn btn-primary" name="" value="Submit">
+		{%csrf_token%}
+<input type="submit" class="btn btn-primary" value="Submit">
 			</form>
 
 				</div>
